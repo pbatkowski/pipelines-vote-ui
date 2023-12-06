@@ -35,8 +35,8 @@ def hello():
         vote=vote,
     ))
     resp.set_cookie('voter_id', voter_id)
-    return null
-    #return resp
+    #return null
+    return resp
 
 @app.route("/result", methods=['GET'])
 def result():
