@@ -35,7 +35,6 @@ def hello():
         vote=vote,
     ))
     resp.set_cookie('voter_id', voter_id)
-    #return null
     return resp
 
 @app.route("/result", methods=['GET'])
@@ -54,6 +53,9 @@ def votes():
 def send_js(path):
     return send_from_directory('templates', path)
 
+# testing function, should return None. Don't use in prod.    
+def function1():
+    return 0
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080, debug=True)
