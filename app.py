@@ -7,7 +7,7 @@ import random
 import json
 import requests
 
-option_a = os.getenv('OPTION_A', u"The Santa Clause 1 🎅")
+option_a = os.getenv('OPTION_A', u"The Santa Clause 2 🎅")
 option_b = os.getenv('OPTION_B', u"Die Hard 🔫 🎄")
 hostname = socket.gethostname()
 
@@ -55,7 +55,7 @@ def send_js(path):
 
 # testing function, should return None. Don't use in prod.    
 def function1():
-    return None
+    return -1
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', port=8080, debug=True)
